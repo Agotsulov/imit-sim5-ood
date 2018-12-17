@@ -10,11 +10,11 @@ public class DataDecorator implements Data{
 
     @Override
     public void write(String s) {
-        data.write(s);
+        data.write(s + "\n");
     }
 
     @Override
     public String read() {
-        return data.read();
+        return data.read().toLowerCase();
     }
 }
